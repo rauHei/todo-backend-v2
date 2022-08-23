@@ -1,0 +1,7 @@
+PUT http://localhost:3000/todos/62c328689db18988e76b6171
+Content-Type: application/json
+
+{
+    "name":"tee tämä",
+    "completed": true
+}
