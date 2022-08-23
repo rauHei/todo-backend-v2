@@ -22,7 +22,7 @@ mongoose.connect(config.MONGODB_URI)
 
 // this allows connection from different domains and ports
 app.use(cors())
-app.use(middleware.requestLogger)
+
 
 // convert json string to json object (from request)
 app.use(express.json())
@@ -38,6 +38,8 @@ app.get("*", (req, res) => {
         path.join(__dirname, "./build/index.html")
     );
 })
+
+app.use(middleware.requestLogger)
 
 module.exports = app;
 

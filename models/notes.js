@@ -6,8 +6,7 @@ const todoSchema = new mongoose.Schema({
     content: String,
     begin: String,
     end: String,
-    completed: Boolean,
-    date: String
+    completed: Boolean
 
 })
 todoSchema.set('toJSON', {
